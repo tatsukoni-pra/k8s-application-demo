@@ -14,6 +14,8 @@ spec:
       labels:
         app: k8s-application
     spec:
+      nodeSelector:
+        kubernetes.io/arch: amd64
       containers:
       - name: k8s-application-nginx
         image: 083636136646.dkr.ecr.ap-northeast-1.amazonaws.com/k8s-application-nginx:20250612v2
