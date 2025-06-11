@@ -1,12 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: demo-pod
+  name: k8s-application-pod
   labels:
-    app: demo
+    app: k8s-application
 spec:
   containers:
-    - name: demo-container
-      image: nginx:latest
-      ports:
-        - containerPort: 80
+  - name: k8s-application-nginx
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+      name: http
+      protocol: TCP
