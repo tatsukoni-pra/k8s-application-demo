@@ -15,10 +15,10 @@ spec:
         app: k8s-application
     spec:
       nodeSelector:
-        kubernetes.io/arch: amd64
+        kubernetes.io/arch: arm64
       containers:
       - name: k8s-application-nginx
-        image: 083636136646.dkr.ecr.ap-northeast-1.amazonaws.com/k8s-application-nginx:20250612v2
+        image: 083636136646.dkr.ecr.ap-northeast-1.amazonaws.com/k8s-application-nginx:20250620v1
         ports:
         - containerPort: 80
           name: http
