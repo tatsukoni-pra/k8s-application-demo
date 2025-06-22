@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: eks-iam-test1
+spec:
+  containers:
+    - name: my-aws-cli
+      image: amazon/aws-cli:latest
+      args: ['s3', 'ls']
+  restartPolicy: Never
