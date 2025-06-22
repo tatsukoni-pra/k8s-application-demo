@@ -3,6 +3,7 @@ kind: Pod
 metadata:
   name: eks-iam-test1
 spec:
+  serviceAccountName: k8s-application-sa
   containers:
     - name: my-aws-cli
       image: amazon/aws-cli:latest
