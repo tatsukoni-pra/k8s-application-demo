@@ -6,7 +6,6 @@ resources:
   - replicaset.yaml
   - service.yaml
   - target_group_binding.yaml
-  - s3_pod.yaml
   - service-account.yaml
 
 namespace: k8s-application
