@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: k8s-application-nginx-other
+spec:
+  nodeSelector:
+    kubernetes.io/arch: arm64
+  containers:
+  - name: k8s-application-nginx-other
+    image: 083636136646.dkr.ecr.ap-northeast-1.amazonaws.com/k8s-application-nginx:20250627v1
+    ports:
+    - containerPort: 80
+      name: http
+      protocol: TCP
