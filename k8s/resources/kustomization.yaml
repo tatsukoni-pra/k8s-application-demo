@@ -7,5 +7,6 @@ resources:
   - service.yaml
   - target_group_binding.yaml
   - service-account.yaml
+  - security_group_policy.yaml
 
 namespace: k8s-application

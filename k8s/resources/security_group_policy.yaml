@@ -1,0 +1,12 @@
+apiVersion: vpcresources.k8s.aws/v1beta1
+kind: SecurityGroupPolicy
+metadata:
+  name: k8s-application-sgp
+  namespace: k8s-application
+spec:
+  podSelector:
+    matchLabels:
+      app: k8s-application
+  securityGroups:
+    groupIds:
+      - sg-038623ff3a5ffd33d
