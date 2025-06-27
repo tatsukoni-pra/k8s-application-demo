@@ -8,6 +8,5 @@ resources:
   - target_group_binding.yaml
   - service-account.yaml
   - security_group_policy.yaml
-  - other_pod.yaml
 
 namespace: k8s-application
