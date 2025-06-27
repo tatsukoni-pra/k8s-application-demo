@@ -23,8 +23,8 @@ spec:
         - containerPort: 80
           name: http
           protocol: TCP
-      env:
-      - name: APP
-        value: "web"
-      - name: ENVIRONMENT
-        value: "test"
+        env:
+        - name: APP
+          value: "web"
+        - name: ENVIRONMENT
+          value: "test"
