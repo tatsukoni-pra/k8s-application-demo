@@ -10,3 +10,4 @@ spec:
   securityGroups:
     groupIds:
       - sg-038623ff3a5ffd33d
+      - sg-06d6f4216ef8be974
