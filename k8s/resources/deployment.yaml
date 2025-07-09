@@ -1,11 +1,16 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: k8s-application-nginx-replicaset
+  name: k8s-application-nginx-deployment
   labels:
     app: k8s-application
 spec:
   replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
   selector:
     matchLabels:
       app: k8s-application

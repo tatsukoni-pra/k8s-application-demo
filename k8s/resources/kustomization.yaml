@@ -3,7 +3,7 @@ kind: Kustomization
 
 resources:
   - namespace.yaml
-  - replicaset.yaml
+  - deployment.yaml
   - service.yaml
   - target_group_binding.yaml
   - service-account.yaml
