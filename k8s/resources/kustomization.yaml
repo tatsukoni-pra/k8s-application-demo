@@ -11,3 +11,9 @@ resources:
   - external_secret.yaml
 
 namespace: k8s-application
+
+# https://qiita.com/teruq/items/58afa19169372d622e8a
+images:
+- name: k8s-application-nginx-image
+  newName: 083636136646.dkr.ecr.ap-northeast-1.amazonaws.com/k8s-application-nginx
+  newTag: 20250718v1
