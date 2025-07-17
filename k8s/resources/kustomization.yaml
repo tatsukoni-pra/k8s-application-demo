@@ -6,8 +6,8 @@ resources:
   - deployment.yaml
   - service.yaml
   - target_group_binding.yaml
-  - service-account.yaml
-  - security_group_policy.yaml
+  # - service-account.yaml
+  # - security_group_policy.yaml
   - external_secret.yaml
 
 namespace: k8s-application
